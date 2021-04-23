@@ -1,0 +1,28 @@
+section {
+  display: flex;
+}
+
+#logement-content {
+  display: flex;
+  align-content: space-around;
+}
+
+#popular-content {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
