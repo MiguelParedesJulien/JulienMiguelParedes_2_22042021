@@ -22,11 +22,17 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 li {
   list-style: none;
 }
 
-/*Header*/
+/* Header */
 
 header {
   display: flex;
@@ -64,7 +70,7 @@ nav li {
   color: #0065fc;
 }
 
-/*Section recherche */
+/* Section recherche */
 
 .titre-recherche {
   font-weight: bold;
@@ -157,7 +163,7 @@ input[type="button"] {
   font-size: 0.85rem;
 }
 
-/*Section logement partie hébergements*/
+/* Section logement partie hébergements */
 
 #section-logement {
   display: flex;
@@ -173,15 +179,12 @@ input[type="button"] {
 }
 
 .logement-container h2 {
-  margin-left: 25px;
+  margin-left: 30px;
+  font-size: 1.3em;
 }
 
 .logement-container h3 {
   margin-left: 30px;
-}
-
-.logement-container h2 {
-  font-size: 1.3em;
 }
 
 #logement-content {
@@ -226,8 +229,6 @@ span {
 }
 
 .content img {
-  /*width: 230px;
-	height: 112px;*/
   object-fit: cover;
   width: 100%;
   height: 60%;
@@ -244,34 +245,196 @@ span {
   margin-bottom: 30px;
 }
 
-/*Section logement partie populaires*/
+/* Section logement partie populaires */
 
 #popular-container {
   display: flex;
   flex-direction: column;
   flex: 1;
+  border-radius: 15px;
 }
+
+.popular-content {
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#popular-container h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 30px 0 30px;
+}
+
+#popular-container a {
+  width: 85%;
+  height: 22%;
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+#popular-container img {
+  object-fit: cover;
+  width: 40%;
+  border-radius: 15px 0 0 15px;
+}
+
+.popular-description {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-description h3 {
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
+#popular-container .etoile {
+  margin-top: auto;
+  color: #0065fc;
+  font-size: 10px;
+  padding-bottom: 5px;
+  margin-left: 2px;
+}
+
+/* Section activités */
+
+#section-activite {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.activite-container {
+  display: flex;
+  justify-content: space-between;
+  height: 440px;
+}
+
+#section-activite h3 {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #000;
+  margin-left: 15px;
+}
+
+.content-bloc,
+.activite-container > a {
+  width: 23%;
+}
+
+.content-bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-activite {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.content-activite img {
+  object-fit: cover;
+  width: 100%;
+  height: 87%;
+  border-radius: 15px 15px 0 0;
+}
+
+.content-activite-1 {
+  height: 240px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.content-activite-1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 77%;
+  border-radius: 15px 15px 0 0;
+}
+
+.content-activite-2 {
+  height: 180px;
+  border-radius: 15px;
+}
+
+.content-activite-2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
+}
+
+.content-activite-4 {
+  height: 180px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.content-activite-4 img {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
+}
+
+.content-activite-5 {
+  height: 240px;
+  border-radius: 15px;
+}
+
+.content-activite-5 img {
+  object-fit: cover;
+  width: 100%;
+  height: 77%;
+  border-radius: 15px 15px 0 0;
+}
+
+div[class*="content-activite"] {
+  box-shadow: -5px 5px 5px 0px #f2f2f2, 5px 5px 5px 0px #f2f2f2,
+    5px -5px 5px 0px #f2f2f2, -5px -5px 5px 0px #f2f2f2;
+}
+
+/* Footer */
 
 footer {
   display: flex;
-  justify-content: space-around;
-  background-color: #f2f2f2;
+  padding-top: 20px;
+}
+
+footer h3 {
+  font-size: 1em;
+  font-weight: bold;
 }
 
 footer li {
   list-style: none;
 }
 
+.footer-content {
+  width: 30%;
+  margin-left: 50px;
+  font-size: 0.8em;
+}
+
+.footer-content ul {
+  padding-left: 0;
+}
+
+.footer-content a {
+  color: black;
+}
+
+.footer-content li {
+  line-height: 200%;
+}
+
 .logement-container .content {
   height: 190px;
-}
-
-.section-activite {
-  display: flex;
-  height: 600px;
-}
-
-.section-activite img {
-  object-fit: cover;
-  width: 10%;
 }
