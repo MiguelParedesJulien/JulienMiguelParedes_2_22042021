@@ -183,7 +183,7 @@ i.fas.fa-search {
    margin-bottom: 25px;
 }
 
-/* Section logement partie hébergements */
+/* Section logement : partie hébergements */
 
 .section-logement {
    display: flex;
@@ -201,10 +201,6 @@ i.fas.fa-search {
 .logement-container h2 {
    margin-left: 20px;
    font-size: 1.3em;
-}
-
-.logement-container h3 {
-   margin-left: 20px;
 }
 
 .logement-content {
@@ -245,6 +241,7 @@ span {
 .plus {
    font-size: 0.9em;
    margin-top: 20px;
+   margin-left: 20px;
 }
 
 .content img {
@@ -271,7 +268,7 @@ span {
       5px -5px 5px 0px #e4e4e4, -5px -5px 5px 0px #e4e4e4;
 }
 
-/* Section logement partie populaires */
+/* Section logement : partie populaires */
 
 .popular-container {
    display: flex;
@@ -471,11 +468,11 @@ footer li {
    line-height: 200%;
 }
 
-/* Mise en place responsive */
+/* Mise en place responsive avec les media queries */
 
-/* Téléphone */
+/* Smartphones */
 
-@media all and (max-width: 767px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 799px) {
    .container {
       width: 100%;
       margin: 0;
@@ -609,5 +606,94 @@ footer li {
 
    .recherche p:last-child {
       font-size: 1em;
+   }
+
+   /* Section logement : partie populaire */
+
+   .popular-container {
+      justify-content: space-around;
+      border-radius: 0;
+      height: 100%;
+   }
+
+   .popular-container h2 {
+      margin-bottom: 30px;
+   }
+
+   .popular-container a {
+      margin: 15px auto;
+   }
+
+   .popular-container img {
+      height: 150px;
+      width: 45%;
+   }
+
+   /* Section logement : partie hébergements */
+
+   .section-logement {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+   }
+
+   .logement-container h2 {
+      margin-left: 25px;
+      margin-top: 40px;
+   }
+
+   .plus {
+      margin-left: 30px;
+      font-size: 1em;
+   }
+
+   .logement-container {
+      background-color: #fff;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: auto;
+   }
+
+   .logement-content {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .logement-container .content {
+      height: 195px;
+      width: 85%;
+      margin: auto;
+   }
+
+   .logement-container a {
+      margin: 10px auto;
+      padding: 2px;
+      width: 100%;
+   }
+
+   /* Footer */
+
+   .footer-container {
+      flex-direction: column;
+   }
+
+   .footer-content {
+      width: 90%;
+      margin-left: 0;
+      padding-left: 25px;
+   }
+
+   .footer-content li {
+      width: 70%;
+      font-size: 1.2em;
+   }
+
+   .footer-content li:last-child {
+      margin-bottom: 20px;
+   }
+
+   footer h3 {
+      font-size: 1.3em;
    }
 }
