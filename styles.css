@@ -672,6 +672,50 @@ footer li {
       width: 100%;
    }
 
+   /* Section activités */
+
+   #section-activite {
+      width: 100%;
+      margin-bottom: 50px;
+   }
+
+   #section-activite h2 {
+      padding-left: 25px;
+      margin-bottom: 30px;
+   }
+
+   .activite-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+   }
+
+   .activite-container a {
+      width: 85%;
+      margin: auto;
+   }
+
+   .content-bloc {
+      width: 100%;
+   }
+
+   .activite-container img {
+      height: 70%;
+   }
+
+   .content-activite,
+   .content-activite-1,
+   .content-activite-2,
+   .content-activite-3 {
+      height: 190px;
+      margin-bottom: 30px;
+   }
+
+   .content-activite-4 {
+      height: 190px;
+      margin-bottom: 0;
+   }
+
    /* Footer */
 
    .footer-container {
