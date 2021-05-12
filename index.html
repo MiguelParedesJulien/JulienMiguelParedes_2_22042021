@@ -5,7 +5,8 @@
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" href="styles.css"/>
-      <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet"> 
       <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
    </head>
    <body>
@@ -30,8 +31,11 @@
                     <label for="search">
                         <i class="fas fa-map-marker-alt"></i>
                     </label>
-                    <input id="search" type="search" name="search" value="Marseille, France"><i class="fas fa-search"></i>
-                    <input type="button" value="Rechercher"/>
+                    <input id="search" type="search" name="search" value="Marseille, France">
+                    <button type="submit">
+                        <span class="button-1"><i class="fas fa-search"></i></span>
+                        <span class="button-2">Rechercher</span>
+                    </button>
                 </form>
                 <div class="filtre">
                     <h3>Filtres</h3>
@@ -149,7 +153,7 @@
                     <h3 class="plus">Afficher plus</h3>
                 </div>
 
-                <div class="popular-container">
+                <aside class="popular-container">
                     <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
                     <a href="#">
                         <div class="popular-content">
@@ -199,7 +203,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </aside>
             </section>
 
             <section id="section-activite">    
